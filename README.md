@@ -12,10 +12,16 @@
     - Haar Cascade 객체 검출기를 사용해 사용자의 **얼굴**을 인식
 ```python
 import cv2
+face_cascade_name = './haarcascade_frontalface_default.xml'
 ```
 
 - dlib
     - 사용자의 얼굴에서 **눈**을 인식
+```python
+import dlib
+predictor_file = './shape_predictor_68_face_landmarks.dat'
+```
+
 - EAR 알고리즘
     - 인식한 눈의 종횡비를 계산하고, 이를 토대로 **눈깜박임**을 인식
 
